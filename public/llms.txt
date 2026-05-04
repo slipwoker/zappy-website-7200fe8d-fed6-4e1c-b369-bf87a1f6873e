@@ -1,0 +1,70 @@
+# בן המנעולן — Generative Engine Optimization Map
+
+> Ben the Locksmith is an emergency locksmith service that prides itself on ultra-fast response times, arriving at the customer's location within 15 minutes. The business emphasizes speed, reliability, and convenience, operating as a mobile service that comes directly to the client. The brand name 'Ben the Locksmith' gives it a personal, trustworthy, and approachable feel.
+
+---
+
+## Pages
+
+### בית
+https://example.com
+Ben the Locksmith is an emergency locksmith service that prides itself on ultra-fast response times, arriving at the customer&#39;s location within 15 minutes. The 
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://example.com
+- Endpoint: https://example.com/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel, required)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox, required)
+
+---
+
+# Business Context (for LLM understanding)
+
+## About בן המנעולן
+Ben the Locksmith is an emergency locksmith service that prides itself on ultra-fast response times, arriving at the customer's location within 15 minutes. The business emphasizes speed, reliability, and convenience, operating as a mobile service that comes directly to the client. The brand name 'Ben the Locksmith' gives it a personal, trustworthy, and approachable feel.
+
+## Services/Products
+- מנעולנות לבית הלקוח
+- הגעה תוך 15 דקות
+
+## Target Audience
+- בעלי בתים מודאגי ביטחון
+- רוכשי בתים חדשים
+- בעלי נכסים להשכרה
+
+## Industry
+שירותי מנעולנות
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://example.com/sitemap.xml
+- Robots: https://example.com/robots.txt
+- Flattened page text (for LLMs): https://example.com/llms-full.txt
