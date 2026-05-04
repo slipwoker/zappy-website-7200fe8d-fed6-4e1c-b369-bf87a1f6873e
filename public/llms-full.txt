@@ -2,13 +2,13 @@
 
 Ben the Locksmith is an emergency locksmith service that prides itself on ultra-fast response times, arriving at the customer's location within 15 minutes. The business emphasizes speed, reliability, and convenience, operating as a mobile service that comes directly to the client. The brand name 'Ben the Locksmith' gives it a personal, trustworthy, and approachable feel.
 
-Source: https://example.com
+Source: https://benhamanalolan-1.zappy5.app
 
 ---
 
 ## שירותי מנעולנות — בן המנעולן
 
-URL: https://example.com
+URL: https://benhamanalolan-1.zappy5.app
 Description: Ben the Locksmith is an emergency locksmith service that prides itself on ultra-fast response times, arriving at the customer&#39;s location within 15 minutes. The 
 
 שירותי מנעולנות — בן המנעולן
@@ -897,7 +897,7 @@ Description: Ben the Locksmith is an emergency locksmith service that prides its
 
 ## מדיניות פרטיות
 
-URL: https://example.com/privacy
+URL: https://benhamanalolan-1.zappy5.app/privacy
 Description: מדיניות הפרטיות שלנו - כיצד אנו אוספים, משתמשים ומגנים על המידע שלכם
 
 מדיניות פרטיות
@@ -1163,7 +1163,7 @@ Description: מדיניות הפרטיות שלנו - כיצד אנו אוספי
 
 ## הצהרת נגישות
 
-URL: https://example.com/accessibility
+URL: https://benhamanalolan-1.zappy5.app/accessibility
 Description: הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית
 
 הצהרת נגישות
@@ -1438,7 +1438,7 @@ Description: הצהרת הנגישות שלנו - מחויבותנו לנגיש�
 
 ## תנאי שימוש
 
-URL: https://example.com/terms
+URL: https://benhamanalolan-1.zappy5.app/terms
 Description: תנאי השימוש באתר - הזכויות והחובות של המשתמשים
 
 תנאי שימוש
