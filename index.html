@@ -223,6 +223,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="שירותי מנעולנות — בן המנעולן">
     <meta name="twitter:description" content="Ben the Locksmith is an emergency locksmith service that prides itself on ultra-fast response times, arriving at the customer&#39;s location within 15 minutes. The ">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://benhamanalolan-1.zappy5.app#organization","name":"בן המנעולן","url":"https://benhamanalolan-1.zappy5.app","description":"Ben the Locksmith is an emergency locksmith service that prides itself on ultra-fast response times, arriving at the customer's location within 15 minutes. The business emphasizes speed, reliability, and convenience, operating as a mobile service that comes directly to the client. The brand name 'Ben the Locksmith' gives it a personal, trustworthy, and approachable feel."},{"@type":"WebSite","@id":"https://benhamanalolan-1.zappy5.app#website","url":"https://benhamanalolan-1.zappy5.app","name":"בן המנעולן","publisher":{"@id":"https://benhamanalolan-1.zappy5.app#organization"}},{"@type":"ContactPage","@id":"https://benhamanalolan-1.zappy5.app#contactpage","url":"https://benhamanalolan-1.zappy5.app","name":"שירותי מנעולנות — בן המנעולן","mainEntity":{"@id":"https://benhamanalolan-1.zappy5.app#organization"},"potentialAction":{"@type":"CommunicateAction","target":{"@type":"EntryPoint","urlTemplate":"https://benhamanalolan-1.zappy5.app/api/email/contact-form","actionPlatform":["http/method=POST"],"contentType":"application/json"},"instrument":[{"@type":"PropertyValue","name":"name","propertyID":"text","valueRequired":false,"description":"ישראל ישראלי"},{"@type":"PropertyValue","name":"email","propertyID":"email","valueRequired":false,"description":"your@email.com"},{"@type":"PropertyValue","name":"phone","propertyID":"tel","valueRequired":false,"description":"05X-XXXXXXX"},{"@type":"PropertyValue","name":"message","propertyID":"textarea","valueRequired":false,"description":"תארו את הבעיה — פתיחת דלת, החלפת מנעול, אחר..."},{"@type":"PropertyValue","name":"privacy_consent","propertyID":"checkbox","valueRequired":false}]}}]}</script>
     <meta property="og:type" content="website">
   <meta property="og:locale" content="he_IL">
   
@@ -232,7 +233,7 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <style>
     .skip-link { position: absolute; left: -9999px; top: 0; padding: 12px 18px; background: var(--bg-dark, #1a1a1a); color: var(--text-light, #fff); font-weight: 600; border-radius: 0 0 8px 0; z-index: 10000; }
     .skip-link:focus { left: 0; outline: 2px solid var(--ring, #fff); outline-offset: 2px; }
@@ -306,11 +307,37 @@
     </style>
 
     <style id="zappy-widget-visibility">
-      #mic-access-tool-general-button, .mic-access-tool-general-button,
-      #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-      ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-      #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-        display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+      html[dir="rtl"] .whatsapp-float { right: 20px !important; left: auto !important; }
+      html[dir="ltr"] .whatsapp-float, html:not([dir]) .whatsapp-float { left: 20px !important; right: auto !important; }
+      html[dir="rtl"] #mic-access-tool-general-button, html[dir="rtl"] .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="rtl"] ._access-icon { left: 20px !important; right: auto !important; }
+      html[dir="ltr"] #mic-access-tool-general-button, html[dir="ltr"] .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="ltr"] ._access-icon,
+      html:not([dir]) #mic-access-tool-general-button, html:not([dir]) .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
+      html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
+      @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
+      @media (max-width: 768px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
+      }
+      @media (min-width: 769px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
       }
     </style>
 </head>
@@ -320,16 +347,16 @@
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
     <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     </svg>
     <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
-      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     </svg>
   </button>
 
   <button class="phone-header-btn" data-phone="050-000-0000" aria-label="Call">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
     </svg>
   </button>
 
@@ -788,23 +815,23 @@
 
   <!-- Decorative: Orange Lightning Trail -->
   <svg class="index-hero-lightning" aria-hidden="true" data-no-icon-edit="true" viewBox="0 0 340 480" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <polyline points="320,0 210,120 270,200 140,340 180,420 60,480" stroke="#FF7A00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55" fill="none"></polyline>
-    <polyline points="300,0 190,110 250,195 120,330 160,415 40,480" stroke="#FF7A00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.2" fill="none"></polyline>
+    <polyline points="320,0 210,120 270,200 140,340 180,420 60,480" stroke="#FF7A00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55" fill="none"/>
+    <polyline points="300,0 190,110 250,195 120,330 160,415 40,480" stroke="#FF7A00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.2" fill="none"/>
   </svg>
 
   <!-- Decorative: Map Grid Overlay -->
   <svg class="index-hero-mapgrid" aria-hidden="true" data-no-icon-edit="true" viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
     <defs>
       <pattern id="hero-grid" width="48" height="48" patternUnits="userSpaceOnUse">
-        <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#53D1E8" stroke-width="0.6" opacity="0.18"></path>
+        <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#53D1E8" stroke-width="0.6" opacity="0.18"/>
       </pattern>
     </defs>
-    <rect width="600" height="700" fill="url(#hero-grid)"></rect>
+    <rect width="600" height="700" fill="url(#hero-grid)"/>
   </svg>
 
   <!-- Content -->
   <div class="index-hero-container">
-    <div class="index-hero-content" data-reveal="">
+    <div class="index-hero-content" data-reveal>
 
       <!-- Trust Eyebrow -->
       <div class="index-hero-eyebrow">
@@ -839,8 +866,8 @@
       <div class="index-hero-badge">
         <span class="index-hero-badge-icon" aria-hidden="true">
           <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="#53D1E8" stroke-width="2"></circle>
-            <path d="M12 6v6l4 2" stroke="#53D1E8" stroke-width="2" stroke-linecap="round"></path>
+            <circle cx="12" cy="12" r="10" stroke="#53D1E8" stroke-width="2"/>
+            <path d="M12 6v6l4 2" stroke="#53D1E8" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </span>
         <span class="index-hero-badge-text">זמן הגעה ממוצע: <strong>15 דקות</strong> • זמין 24/7 • ביקור בית ללא עלות נסיעה</span>
@@ -852,7 +879,7 @@
   <!-- Scroll Cue -->
   <div class="index-hero-scroll-cue" aria-hidden="true">
     <svg data-no-icon-edit="true" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M5 8l5 5 5-5" stroke="#F4F1EA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M5 8l5 5 5-5" stroke="#F4F1EA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     <span>גלול למטה</span>
   </div>
@@ -861,9 +888,9 @@
   <div class="index-hero-divider-wrapper">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <!-- Cyan route-line accent -->
-      <line x1="0" y1="30" x2="1200" y2="55" stroke="#53D1E8" stroke-width="1" opacity="0.22"></line>
+      <line x1="0" y1="30" x2="1200" y2="55" stroke="#53D1E8" stroke-width="1" opacity="0.22"/>
       <!-- Diagonal fill to next section -->
-      <path d="M0,90 L0,55 L1200,20 L1200,90 Z" fill="var(--bg-light)"></path>
+      <path d="M0,90 L0,55 L1200,20 L1200,90 Z" fill="var(--bg-light)"/>
     </svg>
   </div>
 
@@ -878,24 +905,24 @@
 
   <div class="iss-container">
     <!-- Section intro -->
-    <header class="iss-header" data-reveal="">
+    <header class="iss-header" data-reveal>
       <span class="eyebrow iss-eyebrow">שירותי מנעולנות</span>
       <h2 class="iss-title">מה אני עושה בשבילך?</h2>
       <p class="iss-subtitle">בן המנעולן מגיע אליך — לא אתה אלינו. כל שירות מתחיל בשיחת טלפון ומסתיים בדלת פתוחה ובביטחון מלא. <a href="#contact" class="iss-inline-link">צור קשר עכשיו</a></p>
     </header>
 
     <!-- Feature cards grid -->
-    <div class="iss-grid" data-reveal-stagger="">
+    <div class="iss-grid" data-reveal-stagger>
 
       <!-- Card 1: Emergency lockout -->
       <article class="iss-card">
         <div class="iss-card-icon-wrap">
           <svg class="iss-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="40" height="40">
-            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3" opacity="0.3"></circle>
-            <path d="M24 8C18.477 8 14 12.477 14 18v4H12a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V24a2 2 0 0 0-2-2h-2v-4c0-5.523-4.477-10-10-10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
-            <path d="M20 18c0-2.21 1.79-4 4-4s4 1.79 4 4v4H20v-4z" fill="currentColor" opacity="0.25"></path>
-            <circle cx="24" cy="31" r="3" fill="currentColor"></circle>
-            <line x1="24" y1="34" x2="24" y2="37" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3" opacity="0.3"/>
+            <path d="M24 8C18.477 8 14 12.477 14 18v4H12a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V24a2 2 0 0 0-2-2h-2v-4c0-5.523-4.477-10-10-10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M20 18c0-2.21 1.79-4 4-4s4 1.79 4 4v4H20v-4z" fill="currentColor" opacity="0.25"/>
+            <circle cx="24" cy="31" r="3" fill="currentColor"/>
+            <line x1="24" y1="34" x2="24" y2="37" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </div>
         <div class="iss-card-body">
@@ -909,11 +936,11 @@
       <article class="iss-card">
         <div class="iss-card-icon-wrap">
           <svg class="iss-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="40" height="40">
-            <rect x="6" y="20" width="36" height="24" rx="3" stroke="currentColor" stroke-width="2"></rect>
-            <path d="M16 20v-6a8 8 0 0 1 16 0v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-            <circle cx="24" cy="32" r="4" fill="currentColor" opacity="0.9"></circle>
-            <path d="M36 8l4 4-12 12-4-1-1-4L36 8z" fill="currentColor" opacity="0.25" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
-            <path d="M37 9l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <rect x="6" y="20" width="36" height="24" rx="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M16 20v-6a8 8 0 0 1 16 0v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="24" cy="32" r="4" fill="currentColor" opacity="0.9"/>
+            <path d="M36 8l4 4-12 12-4-1-1-4L36 8z" fill="currentColor" opacity="0.25" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M37 9l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
         </div>
         <div class="iss-card-body">
@@ -927,12 +954,12 @@
       <article class="iss-card">
         <div class="iss-card-icon-wrap">
           <svg class="iss-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="40" height="40">
-            <rect x="8" y="14" width="32" height="22" rx="3" stroke="currentColor" stroke-width="2"></rect>
-            <path d="M16 14v-3a8 8 0 0 1 16 0v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-            <path d="M20 25h8M24 22v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-            <path d="M6 40h36" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"></path>
-            <circle cx="38" cy="10" r="6" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5"></circle>
-            <path d="M36 10l1.5 1.5L40 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <rect x="8" y="14" width="32" height="22" rx="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M16 14v-3a8 8 0 0 1 16 0v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M20 25h8M24 22v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M6 40h36" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+            <circle cx="38" cy="10" r="6" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M36 10l1.5 1.5L40 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
         <div class="iss-card-body">
@@ -946,10 +973,10 @@
       <article class="iss-card iss-card--featured">
         <div class="iss-card-icon-wrap">
           <svg class="iss-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="40" height="40">
-            <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"></circle>
-            <path d="M24 12v12l7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M8 24H5M43 24h-3M24 8V5M24 43v-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"></path>
-            <circle cx="24" cy="24" r="3" fill="currentColor"></circle>
+            <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+            <path d="M24 12v12l7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 24H5M43 24h-3M24 8V5M24 43v-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            <circle cx="24" cy="24" r="3" fill="currentColor"/>
           </svg>
         </div>
         <div class="iss-card-body">
@@ -966,36 +993,70 @@
   <!-- Bottom wave divider -->
   <div class="iss-divider-wrapper">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 64" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,64 L0,32 Q60,24 120,30 T240,26 Q300,30 360,22 T480,28 Q540,24 600,30 T720,24 Q780,28 840,22 T960,28 Q1020,24 1080,30 T1200,26 L1200,64 Z" fill="#0D1117"></path>
+      <path d="M0,64 L0,32 Q60,24 120,30 T240,26 Q300,30 360,22 T480,28 Q540,24 600,30 T720,24 Q780,28 840,22 T960,28 Q1020,24 1080,30 T1200,26 L1200,64 Z" fill="#0D1117"/>
       <!-- Thin metallic contour line -->
-      <path d="M0,32 Q60,24 120,30 T240,26 Q300,30 360,22 T480,28 Q540,24 600,30 T720,24 Q780,28 840,22 T960,28 Q1020,24 1080,30 T1200,26" fill="#0D1117" stroke="rgba(83,209,232,0.35)" stroke-width="1.5"></path>
+      <path d="M0,32 Q60,24 120,30 T240,26 Q300,30 360,22 T480,28 Q540,24 600,30 T720,24 Q780,28 840,22 T960,28 Q1020,24 1080,30 T1200,26" fill="#0D1117" stroke="rgba(83,209,232,0.35)" stroke-width="1.5"/>
     </svg>
   </div>
 </section>
+
+<section id="layout-1778069546700" class="layout-section" data-zappy-component="true" style="width: 100%; padding: 60px 0; direction: rtl;" data-component-id="imagecard-3col-cta">
+  <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+  <h2 style="font-size: 32px; font-weight: 700; color: #1F2937; margin-bottom: 40px; text-align: center; font-family: system-ui, -apple-system, sans-serif;">כותרת שלך כאן</h2>
+  <div class="image-card-grid" style="--zappy-grid-cols: repeat(auto-fit, minmax(280px, 1fr)); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;" data-zappy-explicit-columns="true">
+    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
+      <img data-placeholder="layout-image-1778069546700-f2fkgba2j" data-context="תיאור תמונה 1" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2320252D;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2320252D20;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%AA%D7%99%D7%90%D7%95%D7%A8%20%D7%AA%D7%9E%D7%95%D7%A0%D7%94%201%3C/text%3E%3C/svg%3E" alt="תיאור תמונה 1" style="width: 100%; height: auto; display: block; border-radius: 8px; object-fit: cover;" class="layout-placeholder-image">
+      <div style="padding: 24px; flex: 1; display: flex; flex-direction: column;">
+        <h3 style="font-size: 20px; font-weight: 600; color: #1F2937; margin-bottom: 10px; font-family: system-ui, -apple-system, sans-serif;">כותרת כרטיס 1</h3>
+        <p style="font-size: 15px; line-height: 1.6; color: #1F2937; opacity: 0.8; font-family: system-ui, -apple-system, sans-serif; flex: 1;">טקסט תיאור כרטיס נמצא כאן</p>
+        <a href="#" style="display: inline-block; margin-top: 16px; padding: 10px 24px; background: #20252D; color: white; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 500; font-family: system-ui, -apple-system, sans-serif; text-align: center;">למד עוד</a>
+      </div>
+    </div>
+    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
+      <img data-placeholder="layout-image-1778069546700-6jr7htket" data-context="תיאור תמונה 2" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2320252D;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2320252D20;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%AA%D7%99%D7%90%D7%95%D7%A8%20%D7%AA%D7%9E%D7%95%D7%A0%D7%94%202%3C/text%3E%3C/svg%3E" alt="תיאור תמונה 2" style="width: 100%; height: auto; display: block; border-radius: 8px; object-fit: cover;" class="layout-placeholder-image">
+      <div style="padding: 24px; flex: 1; display: flex; flex-direction: column;">
+        <h3 style="font-size: 20px; font-weight: 600; color: #1F2937; margin-bottom: 10px; font-family: system-ui, -apple-system, sans-serif;">כותרת כרטיס 2</h3>
+        <p style="font-size: 15px; line-height: 1.6; color: #1F2937; opacity: 0.8; font-family: system-ui, -apple-system, sans-serif; flex: 1;">טקסט תיאור כרטיס נמצא כאן</p>
+        <a href="#" style="display: inline-block; margin-top: 16px; padding: 10px 24px; background: #20252D; color: white; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 500; font-family: system-ui, -apple-system, sans-serif; text-align: center;">למד עוד</a>
+      </div>
+    </div>
+    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
+      <img data-placeholder="layout-image-1778069546700-xldk58j0w" data-context="תיאור תמונה 3" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2320252D;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2320252D20;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%AA%D7%99%D7%90%D7%95%D7%A8%20%D7%AA%D7%9E%D7%95%D7%A0%D7%94%203%3C/text%3E%3C/svg%3E" alt="תיאור תמונה 3" style="width: 100%; height: auto; display: block; border-radius: 8px; object-fit: cover;" class="layout-placeholder-image">
+      <div style="padding: 24px; flex: 1; display: flex; flex-direction: column;">
+        <h3 style="font-size: 20px; font-weight: 600; color: #1F2937; margin-bottom: 10px; font-family: system-ui, -apple-system, sans-serif;">כותרת כרטיס 3</h3>
+        <p style="font-size: 15px; line-height: 1.6; color: #1F2937; opacity: 0.8; font-family: system-ui, -apple-system, sans-serif; flex: 1;">טקסט תיאור כרטיס נמצא כאן</p>
+        <a href="#" style="display: inline-block; margin-top: 16px; padding: 10px 24px; background: #20252D; color: white; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 500; font-family: system-ui, -apple-system, sans-serif; text-align: center;">למד עוד</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
 
 <section class="index-benefits-section" data-layout-spec="בית-benefits" dir="rtl">
   <!-- Decorative map-grid overlay -->
   <div class="ibs-map-grid-overlay" aria-hidden="true"></div>
   <!-- Decorative route lines SVG -->
   <svg class="ibs-route-lines" aria-hidden="true" data-no-icon-edit="true" viewBox="0 0 1200 700" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M900,0 L900,200 L700,200 L700,500 L400,500 L400,700" stroke="rgba(83,209,232,0.07)" stroke-width="2" fill="none"></path>
-    <path d="M1100,100 L1100,350 L800,350 L800,600" stroke="rgba(255,122,0,0.06)" stroke-width="1.5" fill="none"></path>
-    <path d="M600,0 L600,150 L300,150 L300,400 L100,400 L100,700" stroke="rgba(83,209,232,0.05)" stroke-width="1" fill="none"></path>
-    <circle cx="900" cy="200" r="4" fill="rgba(83,209,232,0.25)"></circle>
-    <circle cx="700" cy="500" r="4" fill="rgba(255,122,0,0.25)"></circle>
-    <circle cx="600" cy="150" r="3" fill="rgba(83,209,232,0.2)"></circle>
+    <path d="M900,0 L900,200 L700,200 L700,500 L400,500 L400,700" stroke="rgba(83,209,232,0.07)" stroke-width="2" fill="none"/>
+    <path d="M1100,100 L1100,350 L800,350 L800,600" stroke="rgba(255,122,0,0.06)" stroke-width="1.5" fill="none"/>
+    <path d="M600,0 L600,150 L300,150 L300,400 L100,400 L100,700" stroke="rgba(83,209,232,0.05)" stroke-width="1" fill="none"/>
+    <circle cx="900" cy="200" r="4" fill="rgba(83,209,232,0.25)"/>
+    <circle cx="700" cy="500" r="4" fill="rgba(255,122,0,0.25)"/>
+    <circle cx="600" cy="150" r="3" fill="rgba(83,209,232,0.2)"/>
   </svg>
 
   <div class="ibs-container">
     <!-- Section header -->
-    <div class="ibs-header" data-reveal="">
+    <div class="ibs-header" data-reveal>
       <span class="eyebrow ibs-eyebrow">למה בוחרים בבן המנעולן</span>
       <h2 class="ibs-heading">כשהגישה לבית שלך לא יכולה לחכות</h2>
       <p class="ibs-subheading">שירותי מנעולנות מקצועיים שמגיעים אליך — בכל מצב, בכל שעה, תוך 15 דקות</p>
     </div>
 
     <!-- Bento grid -->
-    <div class="ibs-bento-grid" data-reveal-stagger="">
+    <div class="ibs-bento-grid" data-reveal-stagger>
 
       <!-- TILE XL: Sticky visual / city route map image -->
       <article class="ibs-tile ibs-tile--xl ibs-tile--visual">
@@ -1015,13 +1076,13 @@
           <svg class="ibs-pin-glow" data-element-type="icon" data-icon-type="svg" viewBox="0 0 40 52" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <defs>
               <radialGradient id="pinGlow" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="rgba(83,209,232,0.6)"></stop>
-                <stop offset="100%" stop-color="rgba(83,209,232,0)"></stop>
+                <stop offset="0%" stop-color="rgba(83,209,232,0.6)"/>
+                <stop offset="100%" stop-color="rgba(83,209,232,0)"/>
               </radialGradient>
             </defs>
-            <ellipse cx="20" cy="46" rx="18" ry="6" fill="url(#pinGlow)"></ellipse>
-            <path d="M20,2 C11.163,2 4,9.163 4,18 C4,29.5 20,46 20,46 C20,46 36,29.5 36,18 C36,9.163 28.837,2 20,2 Z" fill="var(--accent)" opacity="0.9"></path>
-            <circle cx="20" cy="18" r="6" fill="rgba(15,20,28,0.8)"></circle>
+            <ellipse cx="20" cy="46" rx="18" ry="6" fill="url(#pinGlow)"/>
+            <path d="M20,2 C11.163,2 4,9.163 4,18 C4,29.5 20,46 20,46 C20,46 36,29.5 36,18 C36,9.163 28.837,2 20,2 Z" fill="var(--accent)" opacity="0.9"/>
+            <circle cx="20" cy="18" r="6" fill="rgba(15,20,28,0.8)"/>
           </svg>
         </div>
       </article>
@@ -1031,10 +1092,10 @@
         <div class="ibs-tile-accent-line ibs-accent--orange" aria-hidden="true"></div>
         <div class="ibs-tile-icon">
           <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="מהירות תגובה">
-            <circle cx="24" cy="24" r="22" stroke="var(--secondary)" stroke-width="2" opacity="0.3"></circle>
-            <path d="M24 8 L24 24 L34 30" stroke="var(--secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M14 4 L10 8 L14 8" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"></path>
-            <path d="M38 14 L42 10 L38 10" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"></path>
+            <circle cx="24" cy="24" r="22" stroke="var(--secondary)" stroke-width="2" opacity="0.3"/>
+            <path d="M24 8 L24 24 L34 30" stroke="var(--secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 4 L10 8 L14 8" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+            <path d="M38 14 L42 10 L38 10" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
           </svg>
         </div>
         <div class="ibs-tile-content">
@@ -1060,10 +1121,10 @@
         <div class="ibs-tile-accent-line ibs-accent--cyan" aria-hidden="true"></div>
         <div class="ibs-tile-icon">
           <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="שירות נייד">
-            <rect x="6" y="20" width="36" height="20" rx="3" stroke="var(--accent)" stroke-width="2" opacity="0.4"></rect>
-            <path d="M14 20 L14 14 C14 9.582 17.582 6 22 6 L26 6 C30.418 6 34 9.582 34 14 L34 20" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"></path>
-            <circle cx="24" cy="30" r="4" fill="var(--accent)" opacity="0.8"></circle>
-            <path d="M8 36 L40 36" stroke="rgba(83,209,232,0.3)" stroke-width="1"></path>
+            <rect x="6" y="20" width="36" height="20" rx="3" stroke="var(--accent)" stroke-width="2" opacity="0.4"/>
+            <path d="M14 20 L14 14 C14 9.582 17.582 6 22 6 L26 6 C30.418 6 34 9.582 34 14 L34 20" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="24" cy="30" r="4" fill="var(--accent)" opacity="0.8"/>
+            <path d="M8 36 L40 36" stroke="rgba(83,209,232,0.3)" stroke-width="1"/>
           </svg>
         </div>
         <div class="ibs-tile-content">
@@ -1088,9 +1149,9 @@
         <div class="ibs-tile-accent-line ibs-accent--orange" aria-hidden="true"></div>
         <div class="ibs-tile-icon">
           <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="אמינות אישית">
-            <path d="M24 4 L28.5 16 L42 16 L31 24.5 L35.5 37 L24 29 L12.5 37 L17 24.5 L6 16 L19.5 16 Z" stroke="var(--secondary)" stroke-width="2" fill="none" opacity="0.5"></path>
-            <path d="M24 10 L27 19 L37 19 L29 25 L32 34 L24 28.5 L16 34 L19 25 L11 19 L21 19 Z" fill="var(--secondary)" opacity="0.15"></path>
-            <circle cx="24" cy="24" r="6" stroke="var(--secondary)" stroke-width="2" opacity="0.8"></circle>
+            <path d="M24 4 L28.5 16 L42 16 L31 24.5 L35.5 37 L24 29 L12.5 37 L17 24.5 L6 16 L19.5 16 Z" stroke="var(--secondary)" stroke-width="2" fill="none" opacity="0.5"/>
+            <path d="M24 10 L27 19 L37 19 L29 25 L32 34 L24 28.5 L16 34 L19 25 L11 19 L21 19 Z" fill="var(--secondary)" opacity="0.15"/>
+            <circle cx="24" cy="24" r="6" stroke="var(--secondary)" stroke-width="2" opacity="0.8"/>
           </svg>
         </div>
         <div class="ibs-tile-content">
@@ -1110,29 +1171,29 @@
         <div class="ibs-audience-groups">
           <div class="ibs-audience-item">
             <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M3 9.5L12 3L21 9.5V20C21 20.552 20.552 21 20 21H15V15H9V21H4C3.448 21 3 20.552 3 20V9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M3 9.5L12 3L21 9.5V20C21 20.552 20.552 21 20 21H15V15H9V21H4C3.448 21 3 20.552 3 20V9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>בעלי בתים פרטיים</span>
           </div>
           <div class="ibs-audience-item">
             <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>רוכשי דירה חדשה</span>
           </div>
           <div class="ibs-audience-item">
             <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.8"></rect>
-              <path d="M16 7V5C16 3.343 14.657 2 13 2H11C9.343 2 8 3.343 8 5V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              <rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M16 7V5C16 3.343 14.657 2 13 2H11C9.343 2 8 3.343 8 5V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
             </svg>
             <span>בעלי נכסים להשכרה</span>
           </div>
           <div class="ibs-audience-item">
             <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M18 8H17M18 8C18 12.418 14.418 16 10 16C5.582 16 2 12.418 2 8C2 3.582 5.582 0 10 0C14.418 0 18 3.582 18 8Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
-              <path d="M15 16L22 22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              <path d="M18 8H17M18 8C18 12.418 14.418 16 10 16C5.582 16 2 12.418 2 8C2 3.582 5.582 0 10 0C14.418 0 18 3.582 18 8Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M15 16L22 22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
             </svg>
             <span>נעולים בחוץ</span>
           </div>
@@ -1147,14 +1208,14 @@
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <filter id="ibsCyanGlow" x="-20%" y="-100%" width="140%" height="400%">
-          <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
-          <feComposite in="SourceGraphic" in2="blur" operator="over"></feComposite>
+          <feGaussianBlur stdDeviation="4" result="blur"/>
+          <feComposite in="SourceGraphic" in2="blur" operator="over"/>
         </filter>
       </defs>
       <!-- Glow line -->
-      <path d="M0,38 L120,38 L120,28 L240,28 L240,38 L360,38 L360,22 L480,22 L480,38 L600,38 L600,18 L720,18 L720,38 L840,38 L840,28 L960,28 L960,38 L1080,38 L1080,24 L1200,24" stroke="rgba(83,209,232,0.4)" stroke-width="1.5" fill="var(--bg-light)" filter="url(#ibsCyanGlow)"></path>
+      <path d="M0,38 L120,38 L120,28 L240,28 L240,38 L360,38 L360,22 L480,22 L480,38 L600,38 L600,18 L720,18 L720,38 L840,38 L840,28 L960,28 L960,38 L1080,38 L1080,24 L1200,24" stroke="rgba(83,209,232,0.4)" stroke-width="1.5" fill="var(--bg-light)" filter="url(#ibsCyanGlow)"/>
       <!-- Fill bottom -->
-      <path d="M0,90 L0,38 L120,38 L120,28 L240,28 L240,38 L360,38 L360,22 L480,22 L480,38 L600,38 L600,18 L720,18 L720,38 L840,38 L840,28 L960,28 L960,38 L1080,38 L1080,24 L1200,24 L1200,90 Z" fill="var(--bg-light)"></path>
+      <path d="M0,90 L0,38 L120,38 L120,28 L240,28 L240,38 L360,38 L360,22 L480,22 L480,38 L600,38 L600,18 L720,18 L720,38 L840,38 L840,28 L960,28 L960,38 L1080,38 L1080,24 L1200,24 L1200,90 Z" fill="var(--bg-light)"/>
     </svg>
   </div>
 </section>
@@ -1167,7 +1228,7 @@
   <div class="its-container">
 
     <!-- Pullquote Hero -->
-    <div class="its-pullquote-wrapper" data-reveal="">
+    <div class="its-pullquote-wrapper" data-reveal>
       <div class="its-quote-mark" aria-hidden="true">“</div>
       <blockquote class="its-pullquote">
         <p>"הגיע תוך פחות מ-15 דקות, פתח את הדלת בשקט ובמקצועיות, ואחרי שעה קשה — הרגשתי שהכל בסדר. בן המנעולן לא רק פתח לי את הדלת, הוא החזיר לי את השקט."</p>
@@ -1182,13 +1243,13 @@
     </div>
 
     <!-- Section Label -->
-    <div class="its-section-header" data-reveal="">
+    <div class="its-section-header" data-reveal>
       <span class="eyebrow its-eyebrow">לקוחות מדברים</span>
       <h2 class="its-section-title">מה אומרים עלינו</h2>
     </div>
 
     <!-- Review Grid -->
-    <div class="its-reviews-grid" data-reveal-stagger="">
+    <div class="its-reviews-grid" data-reveal-stagger>
 
       <!-- Card 1 -->
       <article class="its-review-card">
@@ -1280,7 +1341,7 @@
   <div class="its-divider-underglow" aria-hidden="true"></div>
   <div class="its-divider-wrapper">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,90 L0,38 Q30,28 60,42 T120,30 Q155,22 190,38 T260,26 Q300,18 340,35 T410,22 Q450,14 490,32 T560,20 Q600,12 640,30 T710,18 Q750,10 790,28 T860,16 Q900,8 940,26 T1010,14 Q1050,6 1090,24 T1160,12 L1200,18 L1200,90 Z" fill="#161C25"></path>
+      <path d="M0,90 L0,38 Q30,28 60,42 T120,30 Q155,22 190,38 T260,26 Q300,18 340,35 T410,22 Q450,14 490,32 T560,20 Q600,12 640,30 T710,18 Q750,10 790,28 T860,16 Q900,8 940,26 T1010,14 Q1050,6 1090,24 T1160,12 L1200,18 L1200,90 Z" fill="#161C25"/>
     </svg>
   </div>
 
@@ -1293,31 +1354,31 @@
   <!-- Decorative cyan route lines -->
   <div class="index-stats-route-lines" aria-hidden="true">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <line x1="0" y1="80" x2="1200" y2="80" stroke="rgba(83,209,232,0.12)" stroke-width="1"></line>
-      <line x1="0" y1="200" x2="1200" y2="200" stroke="rgba(83,209,232,0.08)" stroke-width="1"></line>
-      <line x1="0" y1="320" x2="1200" y2="320" stroke="rgba(83,209,232,0.12)" stroke-width="1"></line>
-      <line x1="200" y1="0" x2="200" y2="400" stroke="rgba(83,209,232,0.06)" stroke-width="1"></line>
-      <line x1="600" y1="0" x2="600" y2="400" stroke="rgba(83,209,232,0.06)" stroke-width="1"></line>
-      <line x1="1000" y1="0" x2="1000" y2="400" stroke="rgba(83,209,232,0.06)" stroke-width="1"></line>
+      <line x1="0" y1="80" x2="1200" y2="80" stroke="rgba(83,209,232,0.12)" stroke-width="1"/>
+      <line x1="0" y1="200" x2="1200" y2="200" stroke="rgba(83,209,232,0.08)" stroke-width="1"/>
+      <line x1="0" y1="320" x2="1200" y2="320" stroke="rgba(83,209,232,0.12)" stroke-width="1"/>
+      <line x1="200" y1="0" x2="200" y2="400" stroke="rgba(83,209,232,0.06)" stroke-width="1"/>
+      <line x1="600" y1="0" x2="600" y2="400" stroke="rgba(83,209,232,0.06)" stroke-width="1"/>
+      <line x1="1000" y1="0" x2="1000" y2="400" stroke="rgba(83,209,232,0.06)" stroke-width="1"/>
     </svg>
   </div>
 
   <div class="index-stats-container">
 
     <!-- Section intro -->
-    <div class="index-stats-intro" data-reveal="">
+    <div class="index-stats-intro" data-reveal>
       <span class="eyebrow index-stats-eyebrow">מספרים שמדברים בעד עצמם</span>
       <h2 class="index-stats-heading">שירותי מנעולנות<br><em>שאפשר לסמוך עליהם</em></h2>
     </div>
 
     <!-- Stats grid -->
-    <div class="index-stats-grid" data-reveal-stagger="">
+    <div class="index-stats-grid" data-reveal-stagger>
 
       <!-- Stat 1: 15 min arrival -->
       <article class="index-stats-card">
         <div class="index-stats-card-inner">
           <div class="index-stats-number-row">
-            <span class="index-stats-number" data-count-up="15" data-count-suffix="">0</span>
+            <span class="index-stats-number" data-count-up="15" data-count-suffix>0</span>
             <span class="index-stats-unit">דק׳</span>
           </div>
           <div class="index-stats-cyan-rule" aria-hidden="true"></div>
@@ -1356,14 +1417,14 @@
     </div>
 
     <!-- Closing line -->
-    <p class="index-stats-closing" data-reveal="">כי עזרה מהירה צריכה גם להרגיש בטוחה ואישית — זה בדיוק מה שאנחנו מביאים לדלת שלך.</p>
+    <p class="index-stats-closing" data-reveal>כי עזרה מהירה צריכה גם להרגיש בטוחה ואישית — זה בדיוק מה שאנחנו מביאים לדלת שלך.</p>
 
   </div>
 
   <!-- Bottom angled divider: dark slate → ivory -->
   <div class="index-stats-divider-wrapper">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <polygon points="0,90 1200,0 1200,90" fill="var(--bg-light)"></polygon>
+      <polygon points="0,90 1200,0 1200,90" fill="var(--bg-light)"/>
     </svg>
   </div>
 
@@ -1377,7 +1438,7 @@
     <div class="index-contact-section__grid">
 
       <!-- START column: editorial text -->
-      <div class="index-contact-section__text-col" data-reveal="">
+      <div class="index-contact-section__text-col" data-reveal>
         <p class="eyebrow index-contact-section__eyebrow">צרו קשר עכשיו</p>
         <h2 class="index-contact-section__headline">נעולים בחוץ?<br><span class="index-contact-section__headline-accent">בן מגיע תוך 15 דקות.</span></h2>
         <p class="index-contact-section__lead">שירותי מנעולנות מקצועיים לבית הפרטי שלכם — מהיר, אמין, ודיסקרטי. בין אם נעלתם את עצמכם בחוץ, עברתם לדירה חדשה, או רוצים לאבטח את הנכס — בן כאן בשבילכם.</p>
@@ -1386,8 +1447,8 @@
           <li class="index-contact-section__bullet-item">
             <span class="index-contact-section__bullet-icon" aria-hidden="true">
               <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"></circle>
-                <path d="M5.5 9l2.5 2.5 4.5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M5.5 9l2.5 2.5 4.5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
             <span>פתיחת דלתות נעולות — הגעה מהירה לכל הארץ</span>
@@ -1395,8 +1456,8 @@
           <li class="index-contact-section__bullet-item">
             <span class="index-contact-section__bullet-icon" aria-hidden="true">
               <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"></circle>
-                <path d="M5.5 9l2.5 2.5 4.5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M5.5 9l2.5 2.5 4.5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
             <span>החלפת מנעולים לאחר מעבר דירה חדשה</span>
@@ -1404,8 +1465,8 @@
           <li class="index-contact-section__bullet-item">
             <span class="index-contact-section__bullet-icon" aria-hidden="true">
               <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"></circle>
-                <path d="M5.5 9l2.5 2.5 4.5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M5.5 9l2.5 2.5 4.5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
             <span>אבטחת דירות שכורות ונכסים פרטיים</span>
@@ -1413,8 +1474,8 @@
           <li class="index-contact-section__bullet-item">
             <span class="index-contact-section__bullet-icon" aria-hidden="true">
               <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"></circle>
-                <path d="M5.5 9l2.5 2.5 4.5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M5.5 9l2.5 2.5 4.5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
             <span>שירות חירום 24/7 — גם בלילה ובסופ"ש</span>
@@ -1427,7 +1488,7 @@
           <a href="tel:[business_phone]" class="index-contact-section__phone-cta">
             <span class="index-contact-section__phone-icon" aria-hidden="true">
               <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.5 3.5C3.5 3.5 5 2 6.5 3.5L8.5 5.5C9.5 6.5 9 7.5 8 8.5L7.5 9C7.5 9 9 11.5 11 13.5C13 15.5 13 15 13 15L13.5 14.5C14.5 13.5 15.5 13 16.5 14L18.5 16C20 17.5 18.5 19 18.5 19C18.5 19 16 21 10 15C4 9 2 3.5 3.5 3.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M3.5 3.5C3.5 3.5 5 2 6.5 3.5L8.5 5.5C9.5 6.5 9 7.5 8 8.5L7.5 9C7.5 9 9 11.5 11 13.5C13 15.5 13 15 13 15L13.5 14.5C14.5 13.5 15.5 13 16.5 14L18.5 16C20 17.5 18.5 19 18.5 19C18.5 19 16 21 10 15C4 9 2 3.5 3.5 3.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
             <span>[business_phone]</span>
@@ -1437,7 +1498,7 @@
       </div>
 
       <!-- END column: contact form card -->
-      <div class="index-contact-section__form-col" data-reveal="">
+      <div class="index-contact-section__form-col" data-reveal>
         <div class="index-contact-section__form-card">
           <!-- Metallic top accent bar -->
           <div class="index-contact-section__card-accent" aria-hidden="true"></div>
@@ -1447,20 +1508,20 @@
             <p class="index-contact-section__form-subtitle">מלאו את הפרטים ובן יחזור אליכם בהקדם האפשרי</p>
           </div>
 
-          <form class="contact-form index-contact-section__form" novalidate="">
+          <form class="contact-form index-contact-section__form" novalidate>
             <div class="index-contact-section__field">
               <label class="index-contact-section__label" for="contact-name">שם מלא</label>
-              <input class="index-contact-section__input" type="text" id="contact-name" name="name" placeholder="ישראל ישראלי" required="">
+              <input class="index-contact-section__input" type="text" id="contact-name" name="name" placeholder="ישראל ישראלי" required>
             </div>
 
             <div class="index-contact-section__field">
               <label class="index-contact-section__label" for="contact-email">כתובת אימייל</label>
-              <input class="index-contact-section__input" type="email" id="contact-email" name="email" placeholder="your@email.com" required="">
+              <input class="index-contact-section__input" type="email" id="contact-email" name="email" placeholder="your@email.com" required>
             </div>
 
             <div class="index-contact-section__field">
               <label class="index-contact-section__label" for="contact-phone">טלפון</label>
-              <input class="index-contact-section__input" type="tel" id="contact-phone" name="phone" placeholder="05X-XXXXXXX" required="">
+              <input class="index-contact-section__input" type="tel" id="contact-phone" name="phone" placeholder="05X-XXXXXXX" required>
             </div>
 
             <div class="index-contact-section__field">
@@ -1470,7 +1531,7 @@
 
             <div class="privacy-consent index-contact-section__privacy">
               <label class="privacy-consent-label">
-                <input type="checkbox" name="privacy_consent" class="privacy-consent-checkbox" required="">
+                <input type="checkbox" name="privacy_consent" class="privacy-consent-checkbox" required>
                 <span>קראתי ואני מסכים/ה ל<a href="/terms" target="_blank">תנאי השימוש</a> ול<a href="/privacy" target="_blank">מדיניות הפרטיות</a></span>
               </label>
             </div>
@@ -1478,15 +1539,15 @@
             <button type="submit" class="index-contact-section__submit">
               <span>שלחו פנייה</span>
               <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M14 9H4M9 4l-5 5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M14 9H4M9 4l-5 5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
           </form>
 
           <p class="index-contact-section__response-note">
             <svg data-element-type="icon" data-icon-type="svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.4"></circle>
-              <path d="M7 4v3.5l2 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"></path>
+              <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M7 4v3.5l2 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
             </svg>
             בדרך כלל מגיבים תוך דקות ספורות
           </p>
@@ -1501,11 +1562,11 @@
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="metallic-fade" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="var(--bg-light)" stop-opacity="0"></stop>
-          <stop offset="100%" stop-color="var(--bg-dark)" stop-opacity="1"></stop>
+          <stop offset="0%" stop-color="var(--bg-light)" stop-opacity="0"/>
+          <stop offset="100%" stop-color="var(--bg-dark)" stop-opacity="1"/>
         </linearGradient>
       </defs>
-      <path d="M0,60 L0,20 Q200,8 400,18 T800,12 Q1000,6 1200,16 L1200,60 Z" fill="#0D1117"></path>
+      <path d="M0,60 L0,20 Q200,8 400,18 T800,12 Q1000,6 1200,16 L1200,60 Z" fill="#0D1117"/>
     </svg>
   </div>
 </section>
@@ -1514,13 +1575,13 @@
   <!-- Route-line decorative SVG background -->
   <div class="index-cta-route-bg" aria-hidden="true">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,320 L120,320 L120,180 L300,180 L300,260 L480,260 L480,120 L660,120 L660,240 L840,240 L840,160 L1020,160 L1020,280 L1200,280" stroke="rgba(83,209,232,0.12)" stroke-width="2" fill="none" stroke-dasharray="8 6"></path>
-      <path d="M0,200 L80,200 L80,100 L220,100 L220,220 L400,220 L400,80 L580,80 L580,200 L760,200 L760,120 L940,120 L940,200 L1100,200 L1100,140 L1200,140" stroke="rgba(249,115,22,0.08)" stroke-width="1.5" fill="none" stroke-dasharray="12 8"></path>
-      <circle cx="300" cy="180" r="5" fill="rgba(83,209,232,0.25)"></circle>
-      <circle cx="660" cy="120" r="5" fill="rgba(83,209,232,0.25)"></circle>
-      <circle cx="1020" cy="160" r="5" fill="rgba(249,115,22,0.3)"></circle>
-      <circle cx="480" cy="260" r="4" fill="rgba(83,209,232,0.2)"></circle>
-      <circle cx="840" cy="240" r="4" fill="rgba(83,209,232,0.2)"></circle>
+      <path d="M0,320 L120,320 L120,180 L300,180 L300,260 L480,260 L480,120 L660,120 L660,240 L840,240 L840,160 L1020,160 L1020,280 L1200,280" stroke="rgba(83,209,232,0.12)" stroke-width="2" fill="none" stroke-dasharray="8 6"/>
+      <path d="M0,200 L80,200 L80,100 L220,100 L220,220 L400,220 L400,80 L580,80 L580,200 L760,200 L760,120 L940,120 L940,200 L1100,200 L1100,140 L1200,140" stroke="rgba(249,115,22,0.08)" stroke-width="1.5" fill="none" stroke-dasharray="12 8"/>
+      <circle cx="300" cy="180" r="5" fill="rgba(83,209,232,0.25)"/>
+      <circle cx="660" cy="120" r="5" fill="rgba(83,209,232,0.25)"/>
+      <circle cx="1020" cy="160" r="5" fill="rgba(249,115,22,0.3)"/>
+      <circle cx="480" cy="260" r="4" fill="rgba(83,209,232,0.2)"/>
+      <circle cx="840" cy="240" r="4" fill="rgba(83,209,232,0.2)"/>
     </svg>
   </div>
 
@@ -1530,17 +1591,17 @@
   <!-- Decorative location pin -->
   <div class="index-cta-pin-decoration" aria-hidden="true">
     <svg data-no-icon-edit="true" aria-hidden="true" width="48" height="64" viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="24" cy="62" rx="10" ry="3" fill="rgba(83,209,232,0.15)"></ellipse>
-      <path d="M24,0 C10.7,0 0,10.7 0,24 C0,42 24,64 24,64 C24,64 48,42 48,24 C48,10.7 37.3,0 24,0 Z" fill="rgba(83,209,232,0.18)" stroke="rgba(83,209,232,0.5)" stroke-width="1.5"></path>
-      <circle cx="24" cy="24" r="8" fill="rgba(83,209,232,0.4)"></circle>
-      <circle cx="24" cy="24" r="4" fill="rgba(83,209,232,0.8)"></circle>
-      <circle cx="24" cy="24" r="12" fill="none" stroke="rgba(83,209,232,0.2)" stroke-width="2"></circle>
-      <circle cx="24" cy="24" r="18" fill="none" stroke="rgba(83,209,232,0.1)" stroke-width="1.5"></circle>
+      <ellipse cx="24" cy="62" rx="10" ry="3" fill="rgba(83,209,232,0.15)"/>
+      <path d="M24,0 C10.7,0 0,10.7 0,24 C0,42 24,64 24,64 C24,64 48,42 48,24 C48,10.7 37.3,0 24,0 Z" fill="rgba(83,209,232,0.18)" stroke="rgba(83,209,232,0.5)" stroke-width="1.5"/>
+      <circle cx="24" cy="24" r="8" fill="rgba(83,209,232,0.4)"/>
+      <circle cx="24" cy="24" r="4" fill="rgba(83,209,232,0.8)"/>
+      <circle cx="24" cy="24" r="12" fill="none" stroke="rgba(83,209,232,0.2)" stroke-width="2"/>
+      <circle cx="24" cy="24" r="18" fill="none" stroke="rgba(83,209,232,0.1)" stroke-width="1.5"/>
     </svg>
   </div>
 
   <div class="index-cta-container">
-    <div class="index-cta-band" data-reveal="">
+    <div class="index-cta-band" data-reveal>
 
       <!-- Eyebrow -->
       <p class="index-cta-eyebrow eyebrow">שירותי מנעולנות דחוף · 24/7</p>
@@ -1554,11 +1615,11 @@
       <!-- CTA row -->
       <div class="index-cta-row">
         <a href="tel:[business_phone]" class="index-cta-btn-primary" data-magnet="0.25">
-          <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.9 2.38 2 2 0 012.88.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0121.18 14l.74 2.92z"></path></svg>
+          <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.9 2.38 2 2 0 012.88.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0121.18 14l.74 2.92z"/></svg>
           התקשר עכשיו
         </a>
         <a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener noreferrer" class="index-cta-btn-secondary">
-          <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+          <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           שלח הודעה
         </a>
       </div>
@@ -1566,17 +1627,17 @@
       <!-- Trust strip -->
       <div class="index-cta-trust">
         <span class="index-cta-trust-item">
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           הגעה תוך 15 דקות
         </span>
         <span class="index-cta-trust-divider" aria-hidden="true">·</span>
         <span class="index-cta-trust-item">
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           מורשה ומבוטח
         </span>
         <span class="index-cta-trust-divider" aria-hidden="true">·</span>
         <span class="index-cta-trust-item">
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
           שירות נייד לכל הארץ
         </span>
       </div>
